@@ -15,7 +15,7 @@ cache:
     - "~/.platformio"
 
 env:
-  - PLATFORMIO_CI_SRC=examples/ESP8266-Telnet-Wireless-Terminal
+  - PLATFORMIO_CI_SRC=examples/Telnet-Example
 
 install:
   - pip install -U platformio
