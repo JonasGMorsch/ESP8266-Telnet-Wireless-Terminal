@@ -24,7 +24,7 @@ Go to [Example](https://github.com/JonasGMorsch/ESP8266-Telnet-Wireless-Terminal
 
 ## How to Use: Terminal
 
-Run Terminal.cmd, it's configured to answer to host "Telnet-Example", but any phrase on ```Telnet.begin("your-hostname");``` would work, and also the IP address that is given on serial terminal, but since it changes form one network to another i prefer a hostname.
+Run Terminal.cmd, it's configured to answer to host "Telnet-Example", but any phrase on ```Telnet.begin("your-hostname");``` will work, and also the IP address that is given on serial terminal, but since it changes form one network to another i prefer a hostname.
 
 To configure manually use [this guide](https://www.ssh.com/ssh/putty/windows/)
 
