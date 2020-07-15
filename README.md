@@ -2,7 +2,7 @@
 
 This library enables you to use a telnet wireless terminal on an ESP8266, it also serves as setup for ArduinoOTA, making debugging/uploading wireless.
 
-<img src="https://github.com/JonasGMorsch/ESP8266-Telnet-Wireless-Terminal/blob/master/documentation/Kitty-Terminal.png" width="70%">
+<img src="https://github.com/JonasGMorsch/ESP8266-Telnet-Wireless-Terminal/blob/master/documentation/Kitty-Terminal.png" width="75%">
 
 ## Installing this Library
 
