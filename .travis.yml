@@ -1,0 +1,27 @@
+# * Travis CI Embedded Builds with PlatformIO
+#   < https://docs.travis-ci.com/user/integration/platformio/ >
+# * PlatformIO integration with Travis CI
+#   < https://docs.platformio.org/page/ci/travis.html >
+# * User Guide for `platformio ci` command
+#   < https://docs.platformio.org/page/userguide/cmd_ci.html >
+
+language: python
+python:
+  - "3.7"
+
+sudo: false
+cache:
+  directories:
+    - "~/.platformio"
+
+env:
+  - PLATFORMIO_CI_SRC=examples/Telnet-Example
+
+install:
+  - pip install -U platformio
+  - platformio update
+  # - export PLATFORMIO_BUILD_FLAGS="-D GLOBAL_MACROS_FOR_ALL_TEST_ENV"
+
+script:
+  # - platformio ci --lib="." --board=nodemcuv2 --board=huzzah --board sparkfunBlynk --board=nodemcu-32s --board=esp32cam --board=esp-wrover-kit --board=esp32thing --board=esp32doit-devkit-v1
+  - platformio ci --lib="." --board=nodemcuv2
