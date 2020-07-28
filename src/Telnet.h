@@ -2,7 +2,6 @@
 #define TELNET_H
 
 #include <ESP8266WiFi.h>
-#include <Ticker.h>
 #include <ArduinoOTA.h>
 #include <PolledTimeout.h>
 
@@ -13,7 +12,7 @@
 class Telnet
 {
   public:
-    Telnet() : _telnet(23), _telnetClients(), _ticker()
+    Telnet() : _telnet(23), _telnetClients()
     {
       _telnet.begin();
       _telnet.setNoDelay(true);
@@ -97,7 +96,6 @@ class Telnet
 
     WiFiServer _telnet;
     WiFiClient _telnetClients[MAX_SRV_CLIENTS];
-    Ticker _ticker;
 };
 
 Telnet Telnet;
